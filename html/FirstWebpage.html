@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>
 		This is a Title..
 		</title>
-	</head
+	</head>
 	<body>
 		<header>
 			The header element typically includes a link to the website's home page, 
@@ -46,18 +46,36 @@
 		</p>
 		<hr/>
 		This is the <b><i>Unordered List....</i></b>
-		<ul>
+		<ul type='square'>
 			<li>List 1</li>
 			<li>List 2</li>
 			<li>List 3</li>
 		</ul>
 
 		This is the <b><i>Ordered List....</i></b>
-		<ol>
+		<ol type='A'>
 			<li>List 1</li>
 			<li>List 2</li>
 			<li>List 3</li>
 		</ol>
+		
+		This is the <b><i>Definition List .....</i></b>
+		<dl>
+			<dt>One</dt> 
+				<dd>The first positive number in our counting system.</dd> 
+			<dt>Two</dt> 
+				<dd>The first whole number greater in value than one.</dd> 
+			<dt>Three</dt> 
+				<dd>The next whole number in increasing value after two.</dd> 
+		</dl>
+		
+		<table border=1 width="40%">
+			<caption>Contact Information </caption>
+			<tr bgcolor="paleYellow"><th>Category</th><th colspan="2">Name</th><th>Phone</th></tr>
+			<tr><td rowspan="3">Friends</td><td>Varsha</td><td>Auti</td><td>1234555</td></tr>
+			<tr><td>Tanvi</td><td>Desai</td><td>2424222</td></tr>
+		</table>
+		
 		<hr/>
 		<h4>Non-Semantic Element = div & span </h4>
 		<h4>Semantic Elements are : </h4>
@@ -79,12 +97,17 @@
 			<p>Aside Tag</p>
 		</aside>
 		<figure>
-			<img src="lotus.jpg" alt="Lotus" width="100">
+			<img src="lotus.jpg" alt="Lotus" width="150px" style="border:thick red solid">
 			<figcaption>Fig1. - Lotus image.</figcaption>
 		</figure>
+		<hr/>
 		<footer>
         <!--The footer element normally appears at the bottom of the body element, often with links to other pages in the website and legal information about using the page.-->
         &copy; 2019 The Software Guild, All rights reserved.
         </footer>
+		<hr/>
+		<form action="fakePage.html" method="POST">
+            
+        </form>
 	</body>
 </html>
