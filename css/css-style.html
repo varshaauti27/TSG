@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS-Style</title>
+		<style> 
+		.warning{
+		font-weight: bold;
+		color: red;
+		font-style: italic;
+		}
+		</style>
+		<link rel="stylesheet" href="css/external.css" type="text/css"/>
+	</head>
+	<body>
+		<h2 align="center">CSS Style Sheets</h2>
+		<hr/>
+		<hr>
+		<div style="color:red;font-weight:bold;font-size:18px">
+			<h3>Inline styles</h3>
+			<p>Added to the style attribute of an HTML element.Inline styles take precedence over internal or external style sheets.</p>
+		</div>
+		<hr/>
+		<div>
+			<h3>Internal styles</h3>
+			<p>A set of rules added to the HEAD element of an HTML page inside STYLE tag.These styles are page-specific</p>
+			<p class="warning">
+				First Name is required.  
+			</p>
+			<label for="firstName">First Name : </label>
+			<input type="textbox" name="firstName">
+			<p class="warning">
+				Last Name is required.  
+			</p>
+			<label for="lastName">Last Name : </label>
+			<input type="textbox" name="lastName">
+		</div>
+		<hr/>
+		<div>
+			<h3>External style sheet</h3>
+			<p>A set of rules created as a separate .css file and applied using a style link attribute in the HTML page.</p>
+			<p>There are two ways to connect to an external style sheet: through the link HTML element or through the CSS @import command.</p>
+			<a href="http://thesoftwareguild.com">The Software Guild</a>
+		</div>
+	</body>
+</html>

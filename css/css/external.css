@@ -1,0 +1,23 @@
+a {
+		font-family: monospace;
+		text-decoration: underline;
+		font-weight: none;
+	}
+
+	a:link {
+	  color: Green;
+	}
+
+	a:visited {
+		color: Red;
+	}
+
+	a:hover {
+	 text-decoration: none;
+	 color: #00c; 
+	 font-family: cursive;
+	}
+
+	a:active {
+		font-weight:bold;
+	}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Demo</title>
+		<style>
+			/* This is used for valisation */
+			.warning{
+			color:red;
+			font-family:bold;
+			}
+			div.warning { 
+                font-style: italic; 
+            }
+			p{
+			color:darkviolet;
+			}
+			li{ 
+                border-bottom: 1px dashed black; 
+            }
+			
+			#acceptance 
+            { 
+                border: 3px red dashed; 
+            }
+		</style>
+	</head>
+	<body>
+		<h2 align="center">CSS Examples</h2>
+		<hr color="green"/>
+		<div class="warning">
+			The following error occured:
+		</div>
+		<p class="warning">
+			First Name is required.  
+		</p>
+		<label for="firstName">First Name</label>
+		<input type="textbox" name="firstName">
+		<p class="warning">
+			Last Name is required.  
+		</p>
+		<label for="lastName">Last Name</label>
+		<input type="textbox" name="lastName">
+		<hr color="green"/>
+		<p style="color:red;font-weight:bold;">
+			These fields are required.
+		</p>
+		<hr color="green"/>
+		<p>This is a paragraph</p>
+		<p>This is a second paragraph</p>
+		<hr color="green"/>
+		<ul>
+			<li>Varsha</li>
+			<li>Ashish</li>
+			<li>Tanvi</li>
+			<li>Deepak</li>
+			<li>Nikesh</li>
+		</ul>
+		<hr color="green"/>
+		<h2 align="center">Software Testing Types</h2>
+		<div id="alpha">
+			<h3>Alpha Testing</h3>
+			<p style="color:black;">It is the most common type of testing used in the Software industry. The objective of this testing is to identify all possible issues or defects before releasing it into the market or to the user.
+			Alpha Testing is carried out at the end of the software development phase but before the Beta Testing. Still, minor design changes may be made as a result of such testing.</p>
+		</div>
+		<div id="acceptance">
+			<h3>Acceptance Testing</h3>
+			<p style="color:black;">An Acceptance Test is performed by the client and verifies whether the end to end the flow of the system is as per the business requirements or not and if it is as per the needs of the end-user. 
+			Client accepts the software only when all the features and functionalities work as expected.</p>
+		</div>
+		<div id="regression">
+			<h3>Regression Testing</h3>
+			<p style="color:black;">Testing an application as a whole for the modification in any module or functionality is termed as Regression Testing. 
+			It is difficult to cover all the system in Regression Testing, so typically Automation Testing Tools are used for these types of testing.</p>
+		</div>
+	</body>
+</html>
