@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS-Links & Table</title>
+		<style>
+		a{
+			font-family:monospace;
+			text-decoration:underline;
+			font-weight:none;
+		}
+		a:link{
+			color:green;
+		}
+		a:visited{
+			color:red;
+		}
+		a:hover{
+			text-decoration:none;
+			font-family:cursive;
+		}	
+		a:active{
+			font-weight:bold;
+		}
+		
+		table,th,td{
+			border:1px solid black;
+			border-collapse:collapse;
+			padding: 5px 0px 5px 10px;
+		}
+		table {
+			width: 100%;
+		}
+
+		th {
+			height: 25px;
+		}
+		tfoot td{
+			text-align: center;
+		}
+		tbody tr:nth-child(odd){
+			background-color:orange;
+		}
+		tbody tr:nth-child(even){
+			background-color:palegreen;
+		}
+		</style>
+	</head>
+	<body>
+		<h2>Software Testing Types</h2>
+		<a href="http://softwaretestingfundamentals.com/functional-testing">Functional  Testing </a><br/>
+		<a href="http://softwaretestingfundamentals.com/performance-testing">Performance Testing </a><br/>
+		<a href="http://softwaretestingfundamentals.com/performance-testing">Regression Testing </a><br/>		
+		<a href="http://softwaretestingfundamentals.com/usability-testing">Usability Testing</a><br/>
+		
+		
+		<table border="1">
+			<caption>Table Caption</caption>
+			<thead>
+				<tr>
+					<th>Heading 1</th>
+					<th>Heading 2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Lorem</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>ipsum</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>dolor</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Lorem</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2">Table Footer Text</td>
+				</tr>
+			</tfoot>
+		</table>
+
+	</body>
+</html>
