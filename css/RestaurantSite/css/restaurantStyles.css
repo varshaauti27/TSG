@@ -1,0 +1,39 @@
+body{
+	background-image: linear-gradient( #ffffff, #66ccff);
+}
+
+h1{
+	font-style: oblique; 
+	font-family: cursive; 
+	color: Red;
+	text-align : center;
+	text-decoration: underline;
+}
+
+a:hover{
+	font-weight: bold;
+	}
+	
+a:visited{
+	color : purple;
+}
+	
+h4{
+	font-family:cursive;
+	text-decoration: underline;
+}
+	
+.pgfooter{
+	font-family: San serif; 
+	color: gray;
+	}
+
+.menu_list_title{
+	color: Purple;
+	font-style: oblique;
+	}
+		
+
+	
+
+		

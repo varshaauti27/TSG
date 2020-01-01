@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap Demo</title>
+		<!-- Required Meta Tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="css-bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+				integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+			
+	</head>
+	<body>
+		<div class="container" style="background-color:red">
+			<h1>Container !!!</h1>
+		</div>
+		<hr>
+		<div class="container" style="background-color:lightblue">
+			<h2 align="center" style="color:White" >Grid Demo</h2>
+			
+			<h5>Equal_Width:</h5> 
+			<div class="row">
+				<div class="col">1 of 2</div>
+				<div class="col">2 of 2</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">One of three columns</div>
+				<div class="col-sm">One of three columns</div>
+				<div class="col-sm">One of three columns</div>
+			</div>
+			
+			<h5>Setting One Column Width:</h5>
+			<div class="container">
+				<div class="row">
+					<div class="col">1 of 3</div>
+					<div class="col-6">2 of 3 (wider)</div>
+					<div class="col">3 of 3</div>
+				</div>
+				<div class="row">
+					<div class="col">1 of 3</div>
+					<div class="col-5">2 of 3 (wider)</div>
+					<div class="col">3 of 3</div>
+				</div>
+			</div>
+			
+			<h5>Variable width content:</h5> 
+			<div class="row justify-content-md-center">
+				<div class="col col-lg-2">1 of 3</div>
+				<div class="col-md-auto">Variable width content</div>
+				<div class="col col-lg-2">3 of 3</div>
+			</div>
+		
+			<div class="row">
+				<div class="col">1 of 3</div>
+				<div class="col-md-auto">Variable width content</div>
+				<div class="col col-lg-2">3 of 3</div>
+			</div>
+			
+			<h5>Equal_Width Multi-Row:</h5>
+			<div class="row">
+				<div class="col">col</div>
+				<div class="col">col</div>
+				<div class="w-100"></div>
+				<div class="col">col</div>
+				<div class="col">col</div>
+			</div>
+			
+			<h5>Mix And Match:</h5>
+			<div class="row">
+				<div class="col-12 col-md-8">.col-12 .col-md-8</div>
+				<div class="col-6 col-md-4">.col-6 .col-md-4</div>
+			</div>
+
+			<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+			<div class="row">
+				<div class="col-6 col-md-4">.col-6 .col-md-4</div>
+				<div class="col-6 col-md-4">.col-6 .col-md-4</div>
+				<div class="col-6 col-md-4">.col-6 .col-md-4</div>
+			</div>
+
+			<!-- Columns are always 50% wide, on mobile and desktop -->
+			<div class="row">
+				<div class="col-6">.col-6</div>
+				<div class="col-6">.col-6</div>
+			</div>
+			
+			<hr>
+			
+			<h5>No Gutters:</h5>
+			<div class="row no-gutters">
+				<div class="col-12 col-sm-6 col-md-8">.col-12 .col-sm-6 .col-md-8</div>
+				<div class="col-6 col-md-4">.col-6 .col-md-4</div>
+			</div>
+			
+			<h5>Column Wrapping</h5>
+			<div class="row">
+				<div class="col-9">.col-9</div>
+				<div class="col-4">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+				<div class="col-6">.col-6<br>Subsequent columns continue along the new line.</div>
+			</div>
+			
+			<h5>Column Break</h5>
+			<div class="row">
+				<div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+				<div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+
+				<!-- Force next columns to break to new line -->
+				<div class="w-100"></div>
+
+				<div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+				<div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+			</div>
+			<hr>
+			
+			<h4 align="center" style="color:White" >Reordering</h4>
+			<div class="row">
+				<div class="col">First, But Unordered</div>
+				<div class="col order-12">Second, But Last</div>
+				<div class="col order-1">Third, But First</div>
+			</div>
+			<div class="row">
+				<div class="col order-last">First, But last</div>
+				<div class="col">Second, But Unordered </div>
+				<div class="col order-first">Third, But First </div>
+			</div>
+			
+			<h4 align="center" style="color:White" >Offsetting</h4>
+			<div class="row">
+				<div class="col-md-4">.col-md-4</div>
+				<div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+				<div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+			</div>
+			
+			<hr>
+			<h4 align="center" style="color:white">Nested Rows</h4>
+			<div class="row">
+				<div class="col-sm-9">
+					Level 1 : col-sm-9
+					<div class="row">
+						<div class="col-8 col-sm-6">
+							Level 2: .col-8 .col-sm-6
+						</div>
+						<div class="col-4 col-sm-6">
+							Level 2: .col-4 .col-sm-6
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+			<h4 align="center" style="color:white">Typography</h4>
+			<div class="row">
+				<div class="col">
+					<p class="h5">h5. Bootstrap heading</p>
+					<p class="h6">h6. Bootstrap heading</p>	
+				</div>
+				<div class="w-100"></div>
+				<div class="col">
+					<h5 style="color:blue">Customizing heading</h5>
+					<h3>Fancy Display Heading<small class="text-muted">with secondary text</small></h3>
+				</div>
+				<div class="w-100"></div>
+				<div class="col">
+					<h5 style="color:blue">Display Heading</h5>
+					<h1 class="display-3">Display 3</h1>
+					<h1 class="display-4">Display 4</h1>
+				</div>
+				<div class="w-100"></div>
+				<div class="col">
+					<h5 style="color:blue">Lead</h5>
+					<p class="lead">This is the paragraph with Lead Class.</p>
+				</div>
+				<div class="w-100"></div>
+				<div class="col">
+					<h5 style="color:blue">Inline text element</h5>
+					<p>Mark Tag to <mark>Highlight</mark> text</p>
+					<p>Del Tag to <del>Delete</del> text</p>
+					<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+					<p>Ins Tag to <ins>Insert </ins> text</p>
+					<p>Small Tag to <small>This line of text is meant to be treated as fine print</small></p>
+					<p>Strong Tag to <strong>Bold Text</strong></p>
+					<p>Em Tag to <em>Italicized </em></p>
+				</div>
+			
+				<div class="w-100"></div>
+				<div class="col">
+					<p><abbr title="attribute">attr</abbr></p>
+					<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+				</div>
+				<div class="w-100"></div>
+				<div class="col">
+				<h5 style="color:blue">Blockquotes</h5>
+					<blockquote class="blockquote">
+						<p>This is blockquote text.</p>
+						<footer class="blockquote-footer">This is footer <cite title="Source Title">cite Tag </cite></footer>
+					</blockquote>
+					<blockquote class="blockquote text-center">
+						<p>This is blockquote text.</p>
+						<footer class="blockquote-footer">This is footer <cite title="Source Title">cite Tag </cite></footer>
+					</blockquote>
+					<blockquote class="blockquote text-right">
+						<p>This is blockquote text.</p>
+						<footer class="blockquote-footer">This is footer <cite title="Source Title">cite Tag </cite></footer>
+					</blockquote>
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<h4 style="color:blue">Lists</h4>
+					<h5 style="color:white">Unstyled</h5>
+					<ul class="list-unstyled">
+						<li>First item</li>
+						<li>Second item</li>
+						<li>Third item</li>
+					</ul>
+					
+					<h5 style="color:white">Inline</h5>
+					<ul class="list-inline">
+						<li>First item</li>
+						<li>Second item</li>
+						<li>Third item</li>
+					</ul>
+					
+					<dl class="row">
+						<dt class="col-sm-3">Description Lists</dt>
+						<dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+						
+						<dt class="col-sm-3">Nesting </dt>
+						<dd class="col-sm-9">
+							<dl class="row">
+								<dt class="col-sm-3">Nested defination Lists</dt>
+								<dd class="col-sm-9">This is defination data</dd>
+							</dl>
+						</dd>
+					</dl>
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<h4 style="color:blue">Code</h4>
+					<h5 style="color:white">Inline code</h5>
+					For Example,<code>&lt;sections&gt;</code> should be wrapped as inline
+				</div>
+				<div class="w-100"></div>
+				<div class="col">	
+					<h5 style="color:white">Code blocks</h5>
+					<pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
+&lt;p&gt;And another line of sample text here...&lt;/p&gt;
+</code></pre>
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<h4 style="color:blue">Variables</h4>
+					<var>c</var> = <var>a</var>+<var>b</var>
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<h4 style="color:blue">User Input</h4>
+					To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+					To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+				</div>
+				
+						
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<h4 style="color:blue">Sample Output</h4>
+					<samp>This is the Sample Output.</samp>
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<h4 style="color:blue">Images</h4>
+					<h5 style="color:white">Responsive Images</h5>
+					<img src="images/APJKalam.jpg" class="image-fluid" alt="Rsponsive images"/>
+					<div class="w-100"></div>
+					<h5 style="color:white">Image Thumbnail</h5>
+					<img src="images/APJKalam.jpg" alt="Image Thumbnail" class="img-thumbnail">
+					<h5 style="color:white">Aligning Images</h5>
+					<img src="images/APJKalam.jpg" alt="Image Thumbnail" class="img-thumbnail float-left">
+					<img src="images/APJKalam.jpg" alt="Image Thumbnail" class="img-thumbnail float-right">
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<h5 style="color:white">Picture</h5>
+					​<picture>
+						<source srcset="..." type="image/svg+xml+jpg">
+						<img src="images/APJKalam.jpg" class="img-fluid img-thumbnail" alt="Picture">
+					</picture>
+				</div>
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<h4 style="color:white">Table head options</h4>
+					<table class="table">
+						<thead class="thead-dark">
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Varsha</td>
+								<td>Auti</td>
+								<td>@twitter</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Ashish</td>
+								<td>Desai</td>
+								<td>@facebook</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Deepak</td>
+								<td>Auti</td>
+								<td>@instagram</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>Nikesh</td>
+								<td>Desai</td>
+								<td>@linkedin</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<table class="table table-dark table-striped">
+						<thead class="thead-light">
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Varsha</td>
+								<td>Auti</td>
+								<td>@twitter</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Ashish</td>
+								<td>Desai</td>
+								<td>@facebook</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Deepak</td>
+								<td>Auti</td>
+								<td>@instagram</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>Nikesh</td>
+								<td>Desai</td>
+								<td>@linkedin</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<h4 style="color:white">Bordered Table</h4>
+					<table class="table table-bordered">
+						<thead class="thead-light">
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Varsha</td>
+								<td>Auti</td>
+								<td>@twitter</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Ashish</td>
+								<td>Desai</td>
+								<td>@facebook</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Deepak</td>
+								<td>Auti</td>
+								<td>@instagram</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>Nikesh</td>
+								<td>Desai</td>
+								<td>@linkedin</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<h4 style="color:white">Borderless Table</h4>
+					<table class="table table-borderless">
+						<thead>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Varsha</td>
+								<td>Auti</td>
+								<td>@twitter</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Ashish</td>
+								<td>Desai</td>
+								<td>@facebook</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Deepak</td>
+								<td>Auti</td>
+								<td>@instagram</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>Nikesh</td>
+								<td>Desai</td>
+								<td>@linkedin</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<h4 style="color:white">Hoverable rows</h4>
+					<table class="table table-hover">
+						<thead>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Varsha</td>
+								<td>Auti</td>
+								<td>@twitter</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Ashish</td>
+								<td>Desai</td>
+								<td>@facebook</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Deepak</td>
+								<td>Auti</td>
+								<td>@instagram</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>Nikesh</td>
+								<td>Desai</td>
+								<td>@linkedin</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<h4 style="color:white">Small Table</h4>
+					<table class="table table-sm">
+						<thead>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Varsha</td>
+								<td>Auti</td>
+								<td>@twitter</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Ashish</td>
+								<td>Desai</td>
+								<td>@facebook</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Deepak</td>
+								<td>Auti</td>
+								<td>@instagram</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>Nikesh</td>
+								<td>Desai</td>
+								<td>@linkedin</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<h4 style="color:white">Figures</h4>
+					<figure class="figure">
+						<img src="images/APJKalam.jpg" width="400" height="300" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+						<figcaption class="figure-caption">A caption for the above image.</figcaption>
+					</figure>
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<figure class="figure">
+						<img src="images/APJKalam.jpg" width="400" height="300"  class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+						<figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
+					</figure>
+				</div>
+				
+				<div class="w-100"></div>
+				<div class="col">
+					<hr>
+					<h4 style="color:white" align="center">Component</h4>
+					<h5 style="color:blue">Alert</h5>
+					<div class="alert alert-success" role="alert">
+						<h4 class="alert-heading">Well done!</h4>
+						<p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+						<hr>
+						<p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+					</div>
+					<h5 style="color:blue">Badge</h5>
+					<button type="button" class="btn btn-primary">
+						Profile <span class="badge badge-light">9</span>
+						<span class="sr-only">unread messages</span>
+					</button>
+					
+					<div class="w-100"></div>
+					<div class="col">
+						<h5 style="color:white">Contextual Variations</h5>
+						<span class="badge badge-primary">Primary</span>
+						<span class="badge badge-secondary">Secondary</span>
+						<span class="badge badge-success">Success</span>
+						<span class="badge badge-danger">Danger</span>
+						<span class="badge badge-warning">Warning</span>
+						<span class="badge badge-info">Info</span>
+						<span class="badge badge-light">Light</span>
+						<span class="badge badge-dark">Dark</span>
+					</div>
+					
+					<div class="w-100"></div>
+					<div class="col">
+						<h5 style="color:white">Pill Badges</h5>
+						<span class="badge badge-primary">Primary</span>
+						<span class="badge badge-secondary">Secondary</span>
+						<span class="badge badge-success">Success</span>
+						<span class="badge badge-danger">Danger</span>
+						<span class="badge badge-warning">Warning</span>
+						<span class="badge badge-info">Info</span>
+						<span class="badge badge-light">Light</span>
+						<span class="badge badge-dark">Dark</span>
+					</div>
+					
+					<div class="w-100"></div>
+					<div class="col">
+						<h5 style="color:white">Link Badges</h5>
+						<a href="#" class="badge badge-primary">Primary</a>
+						<a href="#" class="badge badge-secondary">Secondary</a>
+						<a href="#" class="badge badge-success">Success</a>
+						<a href="#" class="badge badge-danger">Danger</a>
+						<a href="#" class="badge badge-warning">Warning</a>
+						<a href="#" class="badge badge-info">Info</a>
+						<a href="#" class="badge badge-light">Light</a>
+						<a href="#" class="badge badge-dark">Dark</a>
+					</div>
+					
+					<div class="w-100"></div>
+					<div class="col">
+						<h5 style="color:white">Breadcrumb</h5>
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item active" aria-current="page">Home</li>
+							</ol>
+						</nav>
+
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Library</li>
+							</ol>
+						</nav>
+
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item"><a href="#">Library</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Data</li>
+							</ol>
+						</nav>
+					</div>
+					
+					<div class="w-100"></div>
+					<div class="col">
+						<h5 style="color:white">Button</h5>
+						<button type="button" class="btn btn-primary">Primary</button>
+						<button type="button" class="btn btn-secondary">Secondary</button>
+						<button type="button" class="btn btn-success">Success</button>
+						<button type="button" class="btn btn-danger">Danger</button>
+						<button type="button" class="btn btn-warning">Warning</button>
+						<button type="button" class="btn btn-info">Info</button>
+						<button type="button" class="btn btn-light">Light</button>
+						<button type="button" class="btn btn-dark">Dark</button>
+						<button type="button" class="btn btn-link">Link</button>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+		<hr>
+		<div class="container-fluid" style="background-color:pink">
+			<h1>Container-Fluid !!!</h1>
+			
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>
