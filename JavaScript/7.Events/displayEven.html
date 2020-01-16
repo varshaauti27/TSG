@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Display Even Numbers</title>
+		<script type="text/javascript" src="displayEven.js"></script>
+			<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+	<div class="container">
+		<h1>Display Even Numbers:</h1>
+		<form name="evenNum" onsubmit="return validateItems();" 
+				 class="form-inline">
+			<div class="form-group">
+				<label for="startNum">Staring Number : </label>
+				<input type="number" class="form-control" id="startNum">
+			</div>
+			<div class="form-group">
+				<label for="endNum">Ending Number : </label>					
+				<input type="number" class="form-control" id="endNum">
+			</div> 
+			<div class="form-group">
+				<label for="steps">Steps : </label>					
+				<input type="number" class="form-control" id="steps">
+			</div>   			
+			<button type="submit" id="submitButton" class="btn btn-default">Display Even</button>
+		</form>
+		<div id="results" style="display:none;">
+			<h3>Here are the even numbers between <span id="startNo"> </span> and <span id="endNo"> </span><br/>
+			<span id="evenNo"></span></h3>
+		</div>
+	</div>
+	</body>
+</html>

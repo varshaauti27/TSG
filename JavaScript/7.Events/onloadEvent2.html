@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Onload Event Example With Function</title>
+		<script type = "text/javascript">
+			function greetTheUser()
+			{
+				var username = prompt("Enter the Username : ");
+				document.getElementById("username").innerText = username;
+			}
+		</script>
+	</head>
+	<body onload = "greetTheUser();">
+		<div>
+			<h1>Hi, <span id = "username"> </span>!!!!</h1>
+		</div>
+	</body>
+</html>

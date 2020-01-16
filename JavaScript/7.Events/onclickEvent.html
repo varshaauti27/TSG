@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Onclick Event With Function</title>
+		<script type="text/javascript">
+			function greetTheUser()
+			{
+				document.getElementById("username").innerText = document.getElementById("inputName").value;
+				document.getElementById("greeting").style.display = "block";
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			Enter the username : <input type="text" id="inputName" placeholder="What is your name??">
+			<button onclick="greetTheUser();">Show Greeting</button>
+		</div>
+		<div id="greeting" style="display:none;">
+			<h1>Hi, <span id="username"> </span>!!!! </h1> 
+		</div>
+	</body>
+</html>

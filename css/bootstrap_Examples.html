@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 	<head>
 		<title>Bootstrap Sample</title>
@@ -56,8 +55,25 @@
 					</p>
 				</div>
 			</div>
-			
-			
+           <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="portfolio01">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                My First Portfolio Piece
+                            </button>
+                        </h5>
+                    </div> <!-- End of #portfolio01 div -->
+                    
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p><a href="" target="_blank">Name of Website</a></p>
+                            <figure><img src="images/website-1778529.png" alt="Screenshot of home page" /></figure>
+                        </div> <!-- End of .card-body div -->
+                    </div>  <!-- End of #collapseOne div -->
+
+                </div> <!-- End of first .card div -->  
+            </div>
 		</div>
 	
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
